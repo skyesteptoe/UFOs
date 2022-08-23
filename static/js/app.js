@@ -7,7 +7,6 @@ var tbody = d3.select("tbody");
 // Start to build a table anc clear any existing data
 function buildTable(data) {
   tbody.html("");
-}
 
 // Loop through each object in the data and append a row ("tr") and cells ("td") for each value in the row
 data.forEach((dataRow) => {
@@ -17,6 +16,7 @@ data.forEach((dataRow) => {
     cell.text(val);
   });
 });
+}
 
 // Getting ready to filter table. Starting by grabbing datetime value from filter
 function handleClick(){
